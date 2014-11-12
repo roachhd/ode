@@ -1,0 +1,51 @@
+  <footer class="wrap site__footer" role="contentinfo">
+    <div class="grid">
+      <section class="small isle--v grid__col grid__col--3-of-6 p-author vcard">
+        <h4>About</h4>
+        <p class="o--mz">My name is <span class="fn">Daniel Eden</span>. I'm a designer from Manchester, <span class="caps">UK</span> currently living and working in San Francisco.</p>
+      </section>
+
+      <section class="small isle--v grid__col grid__col--3-of-6">
+        <h4>Colophon</h4>
+        <p class="o--mz">Designed, developed, and maintained by <a href="/about">Daniel Eden</a>. Hosted by <a title="RamNode" href="https://clientarea.ramnode.com/aff.php?aff=088">RamNode</a>. Set in Leitura News and Franklin Gothic <span class="caps">URW</span>, delivered by Typekit. Check the <a href="/styleguide/">style guide</a>. View <a href="https://github.com/daneden/daneden.me">the source</a>.</p>
+      </section>
+    </div>
+  </footer>
+  <div class="footer__copyright wrap small isle--v">
+    <p>C 2014 Daniel Eden, unless otherwise noted.</p>
+  </div>
+
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-googles-2', 'daneden.me');
+  ga('send', 'pageview');
+</script>
+
+
+<script src="/assets/picturefill-efd83b0d5fe6dac095659da29c71c601.js"></script>
+
+<script>
+// Toggle night theme
+var d = document.documentElement,
+    t = document.querySelectorAll(".js--toggle-lights")[0],
+    m = localStorage.getItem("nightmode");
+
+if(m == "true") {
+  d.classList.add("night-mode");
+}
+
+t.addEventListener("click", function(){
+  if(d.classList.contains("night-mode")) {
+    d.classList.remove("night-mode");
+    localStorage.setItem("nightmode", "false");
+  } else {
+    d.classList.add("night-mode");
+    localStorage.setItem("nightmode", "true");
+  }
+});
+</script>
